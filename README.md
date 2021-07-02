@@ -1,25 +1,19 @@
-Code for FORCE-inspired RNN trainng for the modeling of β-LFP oscillations.
+Code for FORCE-inspired RNN training for the modeling of β-LFP oscillations:
 
-**force_architectures**
-
-Basic network training using FORCE procedure introduced in Sussillo & Abbott, 2009 (single readout on a periodic function), then extending procedure to train: 
+**force_architectures** - basic network training using FORCE procedure introduced in Sussillo & Abbott, 2009 (single readout on a periodic function), followed by extensions to train: 
 - single internal current on periodic function 
 - several internal currents on several functions  
 - all internal currents on a set of functions 
 
-**positive_sigmoid_single**
+**positive_sigmoid_single** - training on a single trial of LFP data in network with positive sigmoid nonlinearity. N (number of neurons) = N^T (number of targets)
 
-Training on a single trial of LFP data in network with positive sigmoid nonlinearity.
-
-**positive_sigmoid_multiple**
-
-Training on multiple trials of LFP data in network with positive sigmoid nonlinearity.
+**positive_sigmoid_multiple** - training RNN on multiple trials of LFP data in network with positive sigmoid nonlinearity. N = N^T.
 
 **duplicates_single**
 
-Training using duplicate method on single trial.
+Training using duplicate method on single trial of LFP data. N = 2N^T.
 
 **duplicates_multiple**
 
-Training using duplicate method on multipe trials. 
+Training using duplicate method on multipe trials of LFP data. N = 2N^T.
 
